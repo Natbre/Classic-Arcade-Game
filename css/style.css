@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #b6cbed;
+}
+
+h2 {
+	font-family: "Lucida Console", monospace;
+	font-size: 20px;
+	color: #6eb56e;
+	font-weight: bold;
+}
