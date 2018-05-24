@@ -31,14 +31,21 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
 
-    for (let i = 0; i < allEnemies.length; i++) {
+  for (let i = 0; i < allEnemies.length; i++) {
         allEnemies[i].y = allEnemies[i].y + 80;
         if (allEnemies[i].y > 250) {
             allEnemies[i].y = 60;
-        } else  if (allEnemies[i].x >= 550) {
+        }
+    }
+    for (let i = 0; i < allEnemies.length; i++) {
+
+        if (allEnemies[i].x >= 550) {
             allEnemies[i].x = 0;
         }
     }
+
+
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
